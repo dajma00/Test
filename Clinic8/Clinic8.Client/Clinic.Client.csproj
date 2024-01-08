@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
+    <StaticWebAssetProjectMode>Default</StaticWebAssetProjectMode>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.0" />
+
+	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all" />
+
+	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+	  <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+
+
+	  <!--<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />-->
+	  <PackageReference Include="BlazorSchool.Components.Web" Version="7.2.0" />
+	  <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+	  <!--<PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0-rc.2.23509.1" />-->
+	  <PackageReference Include="MudBlazor" Version="6.11.1" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <!--<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0-beta.2.ci.20231014172607" />-->
+	  <PackageReference Include="Postmark" Version="4.7.10" />
+	  <PackageReference Include="Syncfusion.Blazor.Calendars" Version="23.2.4" />
+	  <PackageReference Include="Syncfusion.Blazor.Core" Version="23.2.4" />
+	  <PackageReference Include="Syncfusion.Blazor.DropDowns" Version="23.2.4" />
+	  <PackageReference Include="Syncfusion.Blazor.FileManager" Version="23.2.4" />
+	  <PackageReference Include="Syncfusion.Blazor.Grid" Version="23.2.4" />
+	  <PackageReference Include="Syncfusion.Blazor.Inputs" Version="23.2.4" />
+	  <PackageReference Include="Syncfusion.Blazor.Schedule" Version="23.2.4" />
+	  <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.2.4" />
+	  <!--<PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="23.2.4" />-->
+
+  </ItemGroup>
+
+</Project>

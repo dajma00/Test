@@ -1,0 +1,69 @@
+﻿@using Clinic.Components.Pages
+@using Clinic.Models
+@using MudBlazor
+@inherits LayoutComponentBase
+@inject NavigationManager nm
+@inject AppState AppState
+@implements IDisposable
+@inject DataService DataService
+
+
+<MudThemeProvider IsDarkMode="false" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="1" Style="background-color:#4d4594">
+        <MudIconButton Class="d-flex d-sm-none" Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        
+            <AuthorizeView>
+                
+                
+
+            </AuthorizeView>
+
+            <LoginDisplay />
+    </MudAppBar>
+
+
+    
+
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.Large">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+
+</MudLayout>
+
+@code {
+    bool _drawerOpen = false;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    private void ChangeTheme()
+    {
+        //to be done. Dnetal map needs work to work with dark theme. was testing...
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        
+    }
+    private void ChangeState()
+    {
+        this.InvokeAsync(() => this.StateHasChanged());
+    }
+
+    public void Dispose()
+    {
+    }
+
+    
+
+    
+}
+
